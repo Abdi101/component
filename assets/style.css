@@ -1,0 +1,9 @@
+joke-generator {
+  --background: black;
+  /* --primary-color: #FC28FB;
+  --hover-color: #FF008E;
+  --active-color: #FF008E; */
+  --primary-color: #7900ff;
+  --hover-color: #93ffd8;
+  --active-color: #2d31fa;
+}

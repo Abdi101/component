@@ -1,0 +1,72 @@
+/* Starter layout by Geoff Graham
+https://codepen.io/geoffgraham/pen/jaqWMJ
+with some modifications*/
+
+/* ++++++ IMPORTANT ++++++ */
+/* You MUST not modify this file. 
+If you do so, explain why in the code and readme.txt file */
+/* end IMPORTANT +++++++++ */
+
+body {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: minmax(10vw, max-content) minmax(30vw, max-content) minmax(10vw, max-content);
+    grid-gap: 1em;
+
+    margin: 0 auto;
+    max-width: 56rem;
+    padding: 1em 0;
+    font-family: "Montserrat", "open sans", sans-serif;
+}
+
+body > * {
+    padding: 1rem;
+}
+
+header,
+main,
+aside,
+footer {
+    background: #eaeaea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid grey;
+}
+
+main {
+    flex-direction: column;
+}
+
+header,
+footer {
+    grid-column: 1 / span 6;
+}
+
+main {
+    grid-column: 1 / span 3;
+    background: lightsteelblue;
+}
+
+aside {
+    grid-column: span 3;
+    background: lightgreen;
+}
+
+header,
+footer {
+    min-height: 10vw;
+}
+
+@media (max-width: 700px) {
+
+    body {
+        max-width: 95vw;
+    }
+
+    main,
+    aside {
+        grid-column: 1 / span 6;
+    }
+
+}
